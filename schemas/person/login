@@ -1,0 +1,15 @@
+int     login_id
+string  username
+string  email
+string  pwd_hash
+string  pwd_salt
+string  pwd_hash_algo
+int     user_id
+
+primary_key login_id
+primary_key username
+
+unique_key  login_id
+
+foreign_key user_id
+foreign_key username

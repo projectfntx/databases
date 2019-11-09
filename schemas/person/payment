@@ -1,0 +1,8 @@
+int     payment_id
+string  address
+int     user_id
+# collection for credit card info
+
+unique_key  payment_id
+primary_key user_id
+foreign_key user_id

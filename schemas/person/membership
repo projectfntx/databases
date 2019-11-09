@@ -1,0 +1,10 @@
+int     member_id
+int     user_id
+int     league_id
+
+unique_key  member_id
+primary_key user_id
+primary_key league_id
+
+foreign_key user_id
+foreign_key league_id

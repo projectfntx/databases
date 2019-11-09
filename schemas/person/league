@@ -1,0 +1,7 @@
+int     league_id
+string  name
+int     size
+# tons more settings like draft_type, league_type, etc
+
+unique_key  league_id
+primary_key league_id
