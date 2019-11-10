@@ -1,0 +1,13 @@
+# CMake
+cmake.bld/
+build/
+build
+
+# VS Code
+.vscode/
+
+.git/
+
+.*swp
+
+
