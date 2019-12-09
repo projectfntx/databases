@@ -1,11 +1,13 @@
 // main.m.cpp
 
 #include <iostream>
-
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/basic_file_sink.h>
 
+#include "postgres_accessor.h"
+
 using namespace std ;
+using namespace Fanatex ;
 
 namespace {
 
@@ -26,6 +28,8 @@ void init_logger()
 int main( int argc, char* argv[] )
 {
   init_logger() ;
+
+  Postgres::Accessor handle( { "dbname", "user", "password" } ) ;
 
   spdlog::info( "Hello World" ) ;
   cout << "Hello World\n" ;
