@@ -7,9 +7,12 @@ default: all
 init:
 	cmake -B $(BUILD_PATH) -G Ninja
 
+project:
+	ninja -C $(BUILD_PATH) -j12
+
 all:
 	make init
-	ninja -C $(BUILD_PATH) -j12
+	make project	
 
 clean:
 	ninja -C $(BUILD_PATH) -t clean

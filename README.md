@@ -14,3 +14,11 @@ from root directory of the repo, running `$ make` will build into the build dire
 
 # logging setup
 `brew install spdlog`
+
+# postgresql setup
+`brew install libpqxx`
+also do
+`brew install postgresql`
+
+# aws setup
+`brew install aws-sdk-cpp`
